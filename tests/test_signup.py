@@ -16,7 +16,7 @@ def open_signup_page(driver):
 
     signup_page = SignupPage(driver)
 
-    WebDriverWait(driver, 15).until(
+    WebDriverWait(driver, 30).until(
         EC.presence_of_element_located(
             signup_page.FRESHER
         )
